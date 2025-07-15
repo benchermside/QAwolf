@@ -55,6 +55,8 @@ async function sortHackerNewsArticles() {
   }
   console.log(Sorted);
   await page.close();
+  await context.close();
+  await browser.close();
   return Sorted;
 
 }
